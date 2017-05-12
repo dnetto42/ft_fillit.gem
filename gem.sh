@@ -2,7 +2,7 @@
 #dnetto LOLOLOL \o/
 
 while [ 1 ] ; do 
-	if [ -s $1 ] ; then echo " Usage:\n\tsh $0 [nombre de tretrimonos] [ dificulte: hard/easy ] \n\tdefaut en easy" && break ; fi
+	if [ -s $1 ] ; then echo " Usage:\n\tsh $0 [nombre de tetriminos] [ difficulte: hard/easy ] \n\tdefault en easy" && break ; fi
 	u=$1
 	while [ $u -ge 0 ] ; do u=`expr $u - 1` && r=$[ ($RANDOM % ($[ 19 - 1 ] + 1 )) + 1 ]
 		case $r in 
